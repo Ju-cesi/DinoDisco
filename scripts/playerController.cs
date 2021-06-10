@@ -24,6 +24,22 @@ public class playerController : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         movemementInput = context.ReadValue<Vector2>();
+        //this.GetComponent<Animator>().SetBool("isWalking", true);
+    }
+
+    // Prendre un objet = Vélociraptor
+    public void OnTake()
+    {
+        
+    }
+
+    // Activation des boutons
+    public void OnActivate()
+    {
+        if (Input.GetButtonDown("Activate"))
+        {
+            // Une action
+        }
     }
     
     void Update()
@@ -50,5 +66,14 @@ public class playerController : MonoBehaviour
 
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
+
+        if (move != Vector3.zero)
+        {
+            this.GetComponent<Animator>().SetBool("isWalking", true);
+        }
+        else
+        {
+            this.GetComponent<Animator>().SetBool("isWalking", false);
+        }
     }
 }
