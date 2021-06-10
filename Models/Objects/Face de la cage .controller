@@ -11,14 +11,23 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 5344711195994322762}
+<<<<<<< HEAD
     m_Position: {x: 520, y: 320, z: 0}
+=======
+    m_Position: {x: 160, y: 450, z: 0}
+>>>>>>> b2996f93d6633fab36485fd082314eb953edd716
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
+<<<<<<< HEAD
   m_AnyStatePosition: {x: 300, y: 360, z: 0}
   m_EntryPosition: {x: 200, y: 200, z: 0}
+=======
+  m_AnyStatePosition: {x: 470, y: 410, z: 0}
+  m_EntryPosition: {x: 320, y: 280, z: 0}
+>>>>>>> b2996f93d6633fab36485fd082314eb953edd716
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 5344711195994322762}
@@ -30,6 +39,7 @@ AnimatorController:
   m_PrefabAsset: {fileID: 0}
   m_Name: 'Face de la cage '
   serializedVersion: 5
+<<<<<<< HEAD
   m_AnimatorParameters:
   - m_Name: isOpen
     m_Type: 4
@@ -37,6 +47,9 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 1
     m_Controller: {fileID: 0}
+=======
+  m_AnimatorParameters: []
+>>>>>>> b2996f93d6633fab36485fd082314eb953edd716
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
