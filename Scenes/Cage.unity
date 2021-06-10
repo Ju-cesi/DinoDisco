@@ -4153,7 +4153,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.84800225, g: 0.8443396, b: 1, a: 1}
-  m_Intensity: 3
+  m_Intensity: 1
   m_Range: 15.056797
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -4211,7 +4211,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952461729}
   m_LocalRotation: {x: 0.16902943, y: -0.009844968, z: -0.0016884699, w: 0.9855604}
-  m_LocalPosition: {x: 0.98697823, y: -7.566071, z: 1.7507575}
+  m_LocalPosition: {x: -6.139, y: -7.843, z: 0.159}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1216369057}
@@ -7209,6 +7209,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 282578028117706721, guid: 45276250b71dd9f4488e3be0523a1e35, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.421
+      objectReference: {fileID: 0}
+    - target: {fileID: 282578028117706721, guid: 45276250b71dd9f4488e3be0523a1e35, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.229
+      objectReference: {fileID: 0}
+    - target: {fileID: 282578028117706721, guid: 45276250b71dd9f4488e3be0523a1e35, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.461
+      objectReference: {fileID: 0}
+    - target: {fileID: 282578028117706721, guid: 45276250b71dd9f4488e3be0523a1e35, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.03348456
+      objectReference: {fileID: 0}
+    - target: {fileID: 282578028117706721, guid: 45276250b71dd9f4488e3be0523a1e35, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.04134998
+      objectReference: {fileID: 0}
+    - target: {fileID: 282578028117706721, guid: 45276250b71dd9f4488e3be0523a1e35, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.62842906
+      objectReference: {fileID: 0}
+    - target: {fileID: 282578028117706721, guid: 45276250b71dd9f4488e3be0523a1e35, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7760451
+      objectReference: {fileID: 0}
+    - target: {fileID: 282578028117706721, guid: 45276250b71dd9f4488e3be0523a1e35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 102
+      objectReference: {fileID: 0}
+    - target: {fileID: 282578028117706721, guid: 45276250b71dd9f4488e3be0523a1e35, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 186.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312301796242151760, guid: 45276250b71dd9f4488e3be0523a1e35, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 58ace81fdcadc4ec9a2e530e870bcf84, type: 2}
     - target: {fileID: 3857179497011914000, guid: 45276250b71dd9f4488e3be0523a1e35, type: 3}
       propertyPath: m_Name
       value: Table Set 1 Dark Oak
