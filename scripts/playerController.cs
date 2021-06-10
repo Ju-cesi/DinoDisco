@@ -50,7 +50,7 @@ public class playerController : MonoBehaviour
             playerVelocity.y = 0f;
         }
 
-        Vector3 move = new Vector3(movemementInput.x, 0, movemementInput.y);
+        Vector3 move = new Vector3(movemementInput.y, 0, -movemementInput.x);
         controller.Move(move * (Time.deltaTime * playerSpeed));
 
         if (move != Vector3.zero)
