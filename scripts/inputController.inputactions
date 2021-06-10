@@ -149,8 +149,8 @@
             ]
         },
         {
-            "name": "keyboard2",
-            "bindingGroup": "keyboard2",
+            "name": "manette 2",
+            "bindingGroup": "manette 2",
             "devices": []
         }
     ]
