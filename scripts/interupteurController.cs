@@ -31,6 +31,7 @@ public class interupteurController : MonoBehaviour
             transform.position = new Vector3 (transform.position.x, transform.position.y - activatedOffset, transform.position.z);
             //cage.GetComponent<Animator>().GetParameter(0);
             cage.GetComponent<Animator>().SetBool("Open", true);
+            Debug.Log("contact");
         }
     }
 
