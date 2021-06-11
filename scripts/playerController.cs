@@ -25,6 +25,7 @@ public class playerController : MonoBehaviour
     {
         movemementInput = context.ReadValue<Vector2>();
     }
+    
     void Update()
     {
         groundedPlayer = controller.isGrounded;

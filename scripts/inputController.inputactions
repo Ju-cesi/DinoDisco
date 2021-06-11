@@ -77,6 +77,7 @@
             "id": "ad139428-2e7c-4bbe-a1ce-2d067a43e021",
             "actions": [
                 {
+<<<<<<< HEAD
                     "name": "Movement",
                     "type": "Button",
                     "id": "7c6d94b9-c9f1-46e8-91ff-2463e182cef3",
@@ -101,11 +102,17 @@
                     "name": "up",
                     "id": "b5a4b7fe-809e-4a2c-bbc8-1d0d47705b5f",
                     "path": "<Keyboard>/upArrow",
+=======
+                    "name": "",
+                    "id": "dc3f987c-18cc-4c66-8036-a202d2429b4a",
+                    "path": "<DualShockGamepad>/leftStick",
+>>>>>>> b099bfb5537b915e370d2dcb6fa259d3083722c6
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard",
+                    "groups": "Manette",
                     "action": "Movement",
                     "isComposite": false,
+<<<<<<< HEAD
                     "isPartOfComposite": true
                 },
                 {
@@ -134,12 +141,20 @@
                     "name": "right",
                     "id": "fb3ac684-95b0-47dc-84ab-1ed7e5472da3",
                     "path": "<Keyboard>/rightArrow",
+=======
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8d06029b-6d82-4e41-8485-c9214846ccf3",
+                    "path": "<Gamepad>/leftStick",
+>>>>>>> b099bfb5537b915e370d2dcb6fa259d3083722c6
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard",
+                    "groups": "Manette",
                     "action": "Movement",
                     "isComposite": false,
-                    "isPartOfComposite": true
+                    "isPartOfComposite": false
                 }
             ]
         }
@@ -161,7 +176,7 @@
             "bindingGroup": "Manette",
             "devices": [
                 {
-                    "devicePath": "<XInputController>",
+                    "devicePath": "<Gamepad>",
                     "isOptional": false,
                     "isOR": false
                 }

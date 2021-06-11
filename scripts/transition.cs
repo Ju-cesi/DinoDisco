@@ -2,27 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-public class menucontroller : MonoBehaviour
+using System.Collections;
+public class transition : MonoBehaviour
 {
     // Start is called before the first frame update
+    public string scenename;
+    
     void Start()
     {
-        Cursor.lockState = CursorLockMode.None;
-
+        StartCoroutine(transitions());
     }
 
     // Update is called once per frame
     void Update()
     {
         
+
     }
-    public void jouer()
+
+    IEnumerator transitions()
     {
-        SceneManager.LoadScene("transition");
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(scenename);
     }
-    public void quitter()
-    {
-        Application.Quit();
-    }
+    
 }
