@@ -16,6 +16,7 @@ public class playerController : MonoBehaviour
     private bool groundedPlayer;
     
     private Vector2 movemementInput = Vector2.zero;
+    public bool activated = false;
     private void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
@@ -27,19 +28,10 @@ public class playerController : MonoBehaviour
         //this.GetComponent<Animator>().SetBool("isWalking", true);
     }
 
-    // Prendre un objet = Vélociraptor
-    public void OnTake()
-    {
-        
-    }
-
     // Activation des boutons
-    public void OnActivate()
+    public void OnActivate(InputAction.CallbackContext context)
     {
-        if (Input.GetButtonDown("Activate"))
-        {
-            // Une action
-        }
+        activated = context.action.triggered;
     }
     
     void Update()
@@ -75,5 +67,6 @@ public class playerController : MonoBehaviour
         {
             this.GetComponent<Animator>().SetBool("isWalking", false);
         }
+
     }
 }
