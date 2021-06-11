@@ -16,7 +16,7 @@ public class mathistogameover : MonoBehaviour
     {
         
     }
-    void OncollisionEnter(){
+    void OnTriggerEnter(){
         SceneManager.LoadScene("gameover");
     }
 }

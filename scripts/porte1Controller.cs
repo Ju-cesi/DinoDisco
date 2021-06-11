@@ -33,7 +33,7 @@ public class porte1Controller : MonoBehaviour
         
         color = renderer.material.color;
             GameObject dino = collide.gameObject;
-            if (dino.CompareTag("Diplo") & dino.GetComponent<playerController>().activated)
+            if (dino.CompareTag("Diplo"))
             {
                 Debug.Log("action1");
                 isActive = true;
@@ -49,7 +49,7 @@ public class porte1Controller : MonoBehaviour
     {
           color = renderer.material.color;
             GameObject dino = collide.gameObject;
-            if (dino.CompareTag("Diplo") & dino.GetComponent<playerController>().activated)
+            if (dino.CompareTag("Diplo"))
             {
                 Debug.Log("action2");
                 isActive = true;

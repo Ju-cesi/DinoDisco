@@ -366,7 +366,19 @@ MonoBehaviour:
     m_ActionId: fe8da827-b408-4be7-8e99-90951fd11aa1
     m_ActionName: Player/Movement[/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow,/DualShock4GamepadHID/leftStick]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2979132892796500244}
+        m_TargetAssemblyTypeName: playerController, Assembly-CSharp
+        m_MethodName: OnActivate
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 4763f10b-fb5b-48de-9f6b-98c76356fe3d
     m_ActionName: Player/Activate[/Keyboard/q]
   m_NeverAutoSwitchControlSchemes: 0

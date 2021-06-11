@@ -16,7 +16,8 @@ public class cagetomathis : MonoBehaviour
     {
         
     }
-    void OncollisionEnter(){
+    void OnTriggerEnter(){
+        Debug.Log("test");
         SceneManager.LoadScene("MathisScene");
     }
 }
