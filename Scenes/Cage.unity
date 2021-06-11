@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311926, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.38073987, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -458,7 +458,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
-
 --- !u!1001 &38734569
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -472,7 +471,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3123874717785124831, guid: d3665d7c1055d41458e9d2cf6c7c3f2f, type: 3}
       propertyPath: m_RootOrder
-      value: 48
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: 3123874717785124831, guid: d3665d7c1055d41458e9d2cf6c7c3f2f, type: 3}
       propertyPath: m_LocalScale.x
@@ -532,7 +531,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3665d7c1055d41458e9d2cf6c7c3f2f, type: 3}
-
+--- !u!1 &39722534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 39722535}
+  - component: {fileID: 1353855346}
+  m_Layer: 0
+  m_Name: Recovery GameObject (1353855346)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &39722535
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39722534}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 50
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &89166381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -717,7 +746,7 @@ RectTransform:
   m_Children:
   - {fileID: 1596959345}
   m_Father: {fileID: 0}
-  m_RootOrder: 47
+  m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5005,9 +5034,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-
 --- !u!1001 &1076725022
-
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -5098,7 +5125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7734543080871032677, guid: fbf5551ca53ffb14cb5f7bf861bd8146, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 40.8
+      value: 19.8
       objectReference: {fileID: 0}
     - target: {fileID: 7734543080871032677, guid: fbf5551ca53ffb14cb5f7bf861bd8146, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5106,7 +5133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7734543080871032677, guid: fbf5551ca53ffb14cb5f7bf861bd8146, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 33.8
+      value: 56.2
       objectReference: {fileID: 0}
     - target: {fileID: 7734543080871032677, guid: fbf5551ca53ffb14cb5f7bf861bd8146, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5983,29 +6010,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: -133.27, z: 0}
-
---- !u!1 &1353855345 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 530214960235241585, guid: 2e8dac82a42af4a75909cca238487d72, type: 3}
-  m_PrefabInstance: {fileID: 1781481782}
-  m_PrefabAsset: {fileID: 0}
 --- !u!65 &1353855346
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-
-  m_GameObject: {fileID: 1353855345}
-
+  m_GameObject: {fileID: 39722534}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-
-  m_Size: {x: 0.26000005, y: 0.020000054, z: 0.15648568}
-  m_Center: {x: 0.11999996, y: -0.000000007322611, z: -0.068242826}
-
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1360369565
 GameObject:
   m_ObjectHideFlags: 0
