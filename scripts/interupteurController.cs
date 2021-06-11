@@ -25,7 +25,7 @@ public class interupteurController : MonoBehaviour
 
     public void OnTriggerEnter(Collider collide)
     {
-        if (collide.gameObject.CompareTag("Diplo") || collide.gameObject.CompareTag("Trice"))
+        if (collide.gameObject.CompareTag("Velo"))
         {
             isActive = true;
             transform.position = new Vector3 (transform.position.x, transform.position.y - activatedOffset, transform.position.z);
@@ -37,7 +37,7 @@ public class interupteurController : MonoBehaviour
 
     public void OnTriggerExit(Collider collide)
     {
-        if (collide.gameObject.CompareTag("Diplo") || collide.gameObject.CompareTag("Trice"))
+        if (collide.gameObject.CompareTag("Velo"))
         {
             isActive = false;
             transform.position = new Vector3 (transform.position.x, transform.position.y + activatedOffset, transform.position.z);
