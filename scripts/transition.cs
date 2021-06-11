@@ -23,7 +23,7 @@ public class transition : MonoBehaviour
     IEnumerator transitions()
     {
         yield return new WaitForSeconds(1.5f);
-        SceneManager.LoadScene(scenename);
+        SceneManager.LoadScene("cage");
     }
     
 }

@@ -16,7 +16,6 @@ public class interupteurController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -26,7 +25,7 @@ public class interupteurController : MonoBehaviour
 
     public void OnTriggerEnter(Collider collide)
     {
-        if (collide.gameObject.CompareTag("Player"))
+        if (collide.gameObject.CompareTag("Diplo") || collide.gameObject.CompareTag("Trice"))
         {
             isActive = true;
             transform.position = new Vector3 (transform.position.x, transform.position.y - activatedOffset, transform.position.z);
@@ -37,7 +36,7 @@ public class interupteurController : MonoBehaviour
 
     public void OnTriggerExit(Collider collide)
     {
-        if (collide.gameObject.CompareTag("Player"))
+        if (collide.gameObject.CompareTag("Diplo") || collide.gameObject.CompareTag("Trice"))
         {
             isActive = false;
             transform.position = new Vector3 (transform.position.x, transform.position.y + activatedOffset, transform.position.z);

@@ -19,7 +19,7 @@ public class menucontroller : MonoBehaviour
     }
     public void jouer()
     {
-        SceneManager.LoadScene("transition");
+        SceneManager.LoadScene("cage");
     }
     public void quitter()
     {
