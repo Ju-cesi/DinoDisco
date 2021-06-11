@@ -1,14 +1,11 @@
-using System;
-using System.Net.Cache;
-using System.Runtime.CompilerServices;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-public class interupteurPorteController : MonoBehaviour
+public class porte1Controller : MonoBehaviour
 {
     [SerializeField] public GameObject door;
-
-    [SerializeField] public GameObject pile;
+    
     private bool isActive = false;
     private float activatedOffset = 0.18f;
     
@@ -20,12 +17,7 @@ public class interupteurPorteController : MonoBehaviour
     private Renderer renderer;
 
     private Color color;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -38,14 +30,12 @@ public class interupteurPorteController : MonoBehaviour
     
     public void OnTriggerEnter(Collider collide)
     {
-        Debug.Log(pile.gameObject.GetComponent<Pile>().draggable);
         
-        if (pile.gameObject.GetComponent<Pile>().draggable == false)
-        {
-            color = renderer.material.color;
+        color = renderer.material.color;
             GameObject dino = collide.gameObject;
             if (dino.CompareTag("Diplo") & dino.GetComponent<playerController>().activated)
             {
+                Debug.Log("action1");
                 isActive = true;
                 transform.position = new Vector3(transform.position.x, transform.position.y,
                     transform.position.z + activatedOffset);
@@ -53,24 +43,21 @@ public class interupteurPorteController : MonoBehaviour
 
                 //controller = dino.GetComponent<CharacterController>();
             }
-        }
     }
 
     public void OnTriggerStay(Collider collide)
     {
-        if (pile.gameObject.GetComponent<Pile>().draggable == false)
-        {
-            color = renderer.material.color;
+          color = renderer.material.color;
             GameObject dino = collide.gameObject;
             if (dino.CompareTag("Diplo") & dino.GetComponent<playerController>().activated)
             {
+                Debug.Log("action2");
                 isActive = true;
                 transform.position = new Vector3(transform.position.x, transform.position.y,
                     transform.position.z + activatedOffset);
                 renderer.material.color = Color.green;
                 //controller = dino.GetComponent<CharacterController>();
             }
-        }
     }
 
     public void OnTriggerExit(Collider collide)
@@ -79,9 +66,9 @@ public class interupteurPorteController : MonoBehaviour
         isActive = false;
         if (dino.CompareTag("Diplo"))
         {
+            Debug.Log("action3");
             transform.position = new Vector3(transform.position.x, transform.position.y,
                 transform.position.z - activatedOffset);
         }
     }
-
 }

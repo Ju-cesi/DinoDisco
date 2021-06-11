@@ -25,18 +25,19 @@ public class interupteurController : MonoBehaviour
 
     public void OnTriggerEnter(Collider collide)
     {
-        if (collide.gameObject.CompareTag("Diplo") || collide.gameObject.CompareTag("Trice"))
+        if (collide.gameObject.CompareTag("Velo"))
         {
             isActive = true;
             transform.position = new Vector3 (transform.position.x, transform.position.y - activatedOffset, transform.position.z);
             //cage.GetComponent<Animator>().GetParameter(0);
             cage.GetComponent<Animator>().SetBool("Open", true);
+            Debug.Log("contact");
         }
     }
 
     public void OnTriggerExit(Collider collide)
     {
-        if (collide.gameObject.CompareTag("Diplo") || collide.gameObject.CompareTag("Trice"))
+        if (collide.gameObject.CompareTag("Velo"))
         {
             isActive = false;
             transform.position = new Vector3 (transform.position.x, transform.position.y + activatedOffset, transform.position.z);
